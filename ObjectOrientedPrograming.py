@@ -7,16 +7,12 @@ class Force_User:
     def use_force(self):
         print(f"{self.name} uses the Force with power {self.forcepower}!")
         self.forcepower -= 10
+        print(f"{self.name}'s remaining force power: {self.forcepower}")
             
 luke = Force_User("Luke Skywalker", "Green", 100)
-print(f"{luke.name} has a {luke.lightsaber_color} lightsaber. Force power: {luke.forcepower}")
-
+print(f"{luke.name} has a {luke.lightsaber_color} lightsaber.")
 luke.use_force()
-print(f"{luke.name}'s remaining force power: {luke.forcepower}")
 
 darth_vader = Force_User("Darth Vader", "Red", 120)
-
-print(f"{darth_vader.name} has a {darth_vader.lightsaber_color} lightsaber. Force power: {darth_vader.forcepower}")
-
+print(f"{darth_vader.name} has a {darth_vader.lightsaber_color} lightsaber.")
 darth_vader.use_force()
-print(f"{darth_vader.name}'s remaining force power: {darth_vader.forcepower}")
